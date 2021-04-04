@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VoiceCallActivity"
+    android:background="#000"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="HOME"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="00:00"
+        android:textColor="#00ff00"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time"
+        android:layout_marginTop="80dp">
+
+        <LinearLayout
+            android:id="@+id/item_1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/circlebackground"
+            android:gravity="center">
+
+            <ToggleButton
+                android:id="@+id/mute_audio"
+                style="@style/toggleButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toEndOf="@+id/swap_camera"
+                android:layout_toRightOf="@+id/swap_camera"
+                android:background="@drawable/mic"
+                android:padding="-20dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_1"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Mute"
+            android:textSize="20sp"
+            android:textColor="#fff" />
+
+        <LinearLayout
+            android:id="@+id/item_4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="172dp"
+            android:background="@drawable/circlebackground"
+            android:gravity="center">
+
+            <ToggleButton
+                android:id="@+id/mute_audio1"
+                style="@style/toggleButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toEndOf="@+id/swap_camera"
+                android:layout_toRightOf="@+id/swap_camera"
+                android:background="@drawable/keypad"
+                android:padding="-20dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_4"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Keypad"
+            android:textSize="20sp"
+            android:textColor="#fff" />
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/circlebackground"
+            android:gravity="center">
+
+            <ToggleButton
+                android:id="@+id/loud_speaker"
+                style="@style/toggleButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/speaker"
+                android:padding="-20dp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_1"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:gravity="center"
+            android:text="Speaker"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/circlebackground"
+            android:gravity="center">
+
+            <ToggleButton
+                android:id="@+id/add"
+                style="@style/toggleButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/add"
+                android:padding="-20dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="225dp"
+            android:layout_marginLeft="75dp"
+            android:gravity="center"
+            android:text="Add"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="172dp"
+            android:background="@drawable/circlebackground"
+            android:gravity="center">
+
+            <ToggleButton
+                style="@style/toggleButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/facetime"
+                android:padding="-20dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="225dp"
+            android:layout_marginLeft="155dp"
+            android:gravity="center"
+            android:text="Facetime"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="282dp"
+            android:background="@drawable/circlebackground"
+            android:gravity="center">
+
+            <ToggleButton
+                style="@style/toggleButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/contact"
+                android:padding="-20dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="225dp"
+            android:layout_marginLeft="275dp"
+            android:gravity="center"
+            android:text="Contacts"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/lv_endcall"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="350dp"
+            android:layout_marginStart="175dp"
+            android:background="@drawable/circlebackgroundred"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/endCall"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/end_call" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

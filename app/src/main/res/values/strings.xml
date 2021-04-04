@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Rescuer</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_display">Display</string>
+    <string name="title_activity_instructions">Instructions</string>
+    <string name="title_activity_verify">Verify</string>
+    <string name="email_error">Please enter a valid email</string>
+    <string name="quote">\"No woman has to be a victim of physical abuse. Women have to feel like they are alone.\"</string>
+    <string name="help">Please follow the below steps to setup your account:\n\n\n-Register Yourself.\n-Register Your Guardian\'s Numbers.\n-Always maintain working internet connection.\n-SHAKE your phone in case of emergency to alert your guardians.\n-You can also use the fake call and play police alarm features.\n-Record audio for 30secs and then send to your guardians in a one click.\n\t\n\n\n\n\tLETS START NOW!</string>
+</resources>

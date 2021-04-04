@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NGO"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/gradient6">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Listed below are the NGOs for women which are helping women get legal justice and encouraging them to take their lives in their own hands."
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColor="#000"/>
+            <GridView
+                android:layout_marginTop="20dp"
+                android:id="@+id/simpleGridView"
+                android:layout_width="fill_parent"
+                android:layout_height="1600dp"
+                android:footerDividersEnabled="false"
+                android:padding="2dp"
+                android:numColumns="1"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

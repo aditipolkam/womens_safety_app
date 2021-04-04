@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecieveCall"
+    android:background="@drawable/background_login"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/instaLogo"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="HOME"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="50sp"/>
+
+    <TextView
+        android:id="@+id/call_from_helpdesk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/instaLogo"
+        android:text="Incoming Call"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#fff" />
+
+
+
+    <ImageView
+        android:id="@+id/end_call"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/reject_call"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="50dp"
+        android:layout_toLeftOf="@+id/center"
+        android:layout_toStartOf="@+id/center"
+        android:background="@drawable/backgroun_red"
+        android:contentDescription=""
+        android:padding="20dp"
+        android:src="@drawable/end_call" />
+
+
+    <ImageView
+        android:id="@+id/attend_call"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/accept_call"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@+id/center"
+        android:layout_toRightOf="@+id/center"
+        android:background="@drawable/backgroundgreen"
+        android:contentDescription=""
+        android:gravity="center"
+        android:padding="20dp"
+        android:src="@drawable/voice" />
+
+    <View
+        android:id="@+id/center"
+        android:layout_width="2dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/accept_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/attend_call"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/attend_call"
+        android:layout_marginBottom="25dp"
+        android:text="Accept Call"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/reject_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/end_call"
+        android:layout_alignRight="@+id/end_call"
+        android:layout_alignTop="@+id/accept_call"
+        android:text="Reject Call"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginBottom="25dp"
+        android:textColor="#fff" />
+
+</RelativeLayout>
